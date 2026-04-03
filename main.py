@@ -232,6 +232,9 @@ def get_products_with_custom_prices():
             p['price'] = int(custom_prices[p_id])
             
     return all_products
+@app.route("/")
+def home():
+    return "Web đã chạy OK 🚀"
 @app.route('/api/nganhangsub/services')
 def nganhangsub_services():
     try:
